@@ -1,0 +1,21 @@
+version: '3.1'
+services:
+    anubis:
+        build: .
+        container_name: load-balancer
+        ports:
+            - "9000:9000"
+    web1:
+        image: strm/helloworld-http
+        ports:
+            - 8000:80
+      
+    web2:
+        image: strm/helloworld-http
+        ports:
+            - 8001:80      
+
+    web3:
+        image: strm/helloworld-http
+        ports:
+            - 8002:80      
