@@ -11,4 +11,4 @@ WORKDIR /anubis
 
 RUN pip install -e .
 
-CMD ["python","loadbalancer.py"]
+CMD ["python","anubis/reverse_proxy.py"]
