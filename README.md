@@ -11,3 +11,4 @@ Playground Load Balancer written in Python
 
 Routes traffic to available servers using Round Robin
 
+Goes along with https://sangarshanan.github.io/2020/09/27/loadbalancer/
