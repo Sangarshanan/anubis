@@ -7,6 +7,7 @@ class Server:
     url: str = "localhost:8080"  # localhost:8080
     alive: bool = True  # dead or alive
 
+
 def get_alive_servers(servers):
     return [server for server in servers if server.alive is True]
 
