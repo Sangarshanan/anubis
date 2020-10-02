@@ -2,9 +2,12 @@ version: '3.1'
 services:
     anubis:
         build: .
-        container_name: load-balancer
         ports:
-            - "9000:9000"
+            - 9000:9000
+        command: python anubis/serve.py
+        tty: true
+        stdin_open: true
+
     web1:
         image: strm/helloworld-http
         ports:

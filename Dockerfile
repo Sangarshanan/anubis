@@ -9,6 +9,6 @@ COPY . /anubis
 
 WORKDIR /anubis
 
-RUN pip install -e .
+CMD ["python","anubis/serve.py"]
 
-CMD ["python","anubis/reverse_proxy.py"]
+EXPOSE 9000
