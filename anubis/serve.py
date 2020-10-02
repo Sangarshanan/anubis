@@ -3,8 +3,8 @@ from strategy import Strategy
 
 
 def serve(port=9000, how="round_robin"):
-	"""Serve the Balance."""
-    server_address = ("localhost", port)
+    """Serve the Balance."""
+    server_address = ("0.0.0.0", port)
     server = getattr(Strategy, how)
     proxy_handler = create_proxyhandler(server)
     httpd = ThreadedHTTPServer(server_address, proxy_handler)

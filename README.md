@@ -1,6 +1,13 @@
 # anubis
 
-Playground Load Balancer
+![img](https://p.kindpng.com/picc/s/479-4794720_download-anubis-png-image-anubis-png-transparent-png.png)
+
+Playground Load Balancer written in Python
 
 
-Don't use this... Seriously
+### Usage 
+
+`docker-compose up`
+
+Routes traffic to available servers using Round Robin
+
